@@ -12,7 +12,7 @@ class OmniauthCallbacksController < ApplicationController
       token: auth.credentials.token,
       secret: auth.credentials.secret,
     )
-    redirect_to root_path, notice: "Successfully linked " auth.info.nickname "'s Twitter account!"
+    redirect_to root_path, notice: "Successfully linked Twitter account!"
   end
 
   def auth
